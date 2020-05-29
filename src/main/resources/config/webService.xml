@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="webservice Suite" verbose="0" parallel="none">
+	<listeners>
+<!-- 		<listener -->
+<!-- 			class-name="com.quantum.listeners.APIReportiumListener" /> -->
+	</listeners>
+	<parameter name="CLOUD_NAME" value="ps" />
+	<parameter name="securityToken" value="MentionYourToken" />
+	<test name="Webservice Sample" enabled="true">
+		<groups>
+			<run>
+				<include name="@getPerfectoUsers" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+</suite>

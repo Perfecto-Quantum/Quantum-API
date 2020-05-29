@@ -1,0 +1,14 @@
+[
+   {
+      "CustomError": "Session aborted",
+      "StackTraceErrors":[
+         "Session aborted after 5 minutes due to user inactivity."   
+      ]
+       
+   }
+]
+
+
+
+
+
